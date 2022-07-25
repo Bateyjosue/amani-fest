@@ -140,6 +140,82 @@ header .menu-humberger {
   text-transform: uppercase;
 }
 
+.hr {
+  border-top: 2px solid var(--primary);
+  width: 15%;
+  display: flex;
+  margin: 1rem auto;
+  padding: 0rem 0rem;
+  font-weight: 200;
+}
+
+.guest {
+  background: var(--white);
+  padding: 1rem;
+}
+.guest h2 {
+  text-align: center;
+  padding: 1rem 0rem;
+}
+.guest h2 div {
+  border-top: 2px solid var(--primary);
+  width: 15%;
+  display: flex;
+  margin: 1rem auto;
+  padding: 0rem 0rem;
+  font-weight: 200;
+}
+.guest ul li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.guest ul li .img-card .profile {
+  z-index: 1;
+}
+.guest ul li h3 {
+  color: var(--dark);
+  padding: 0rem 0rem 0.5rem;
+  font-weight: 600;
+}
+.guest ul li h6 {
+  color: var(--primary);
+  margin: 0rem 0rem 0.5rem;
+}
+.guest ul li h6 small {
+  background: var(--lb-color);
+  padding: 0.3rem 0.2rem;
+  border-radius: 0rem 0.9rem 0.9rem 0rem;
+}
+.guest ul li hr {
+  width: 10%;
+  margin: 1rem 0rem 0rem;
+}
+.guest ul li p {
+  text-align: justify;
+  font-weight: 200;
+  letter-spacing: 0.04rem;
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}
+.guest button {
+  border: 1px var(--gray) solid;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background: var(--white);
+}
+.guest button i {
+  margin-left: 0.5rem;
+  color: var(--lb-color);
+}
+
 @media screen and (min-width: 768px) {
   body {
     padding: 0rem 5rem;
