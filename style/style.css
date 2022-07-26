@@ -231,6 +231,37 @@ header .menu-humberger {
   padding: 1rem;
 }
 
+footer {
+  padding: 1rem;
+  background: var(--white);
+  overflow: hidden;
+}
+footer img {
+  -o-object-fit: cover;
+}
+footer h2 {
+  color: var(--primary);
+  padding: 1rem 0rem;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer ul a {
+  color: var(--dark);
+}
+footer .social-link ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+footer .social-link ul a {
+  font-size: 1.5rem;
+  color: var(--lb-color);
+}
+
 @media screen and (min-width: 768px) {
   body {
     padding: 0rem 5rem;

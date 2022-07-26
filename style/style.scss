@@ -269,6 +269,44 @@ header {
   }
 }
 
+footer {
+  padding: 1rem;
+  background: var(--white);
+  overflow: hidden;
+
+  img {
+    -o-object-fit: cover;
+  }
+
+  h2 {
+    color: var(--primary);
+    padding: 1rem 0rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    
+    a {
+      color: var(--dark);
+    }
+  }
+
+  .social-link{
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap:2rem;
+      a {
+        font-size: 1.5rem;
+        color: var(--lb-color);
+      }
+    }
+  }
+}
+
 // Desktop Version
 
 @media screen and (min-width: 768px) {
