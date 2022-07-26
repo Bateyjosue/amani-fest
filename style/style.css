@@ -216,6 +216,21 @@ header .menu-humberger {
   color: var(--lb-color);
 }
 
+.partner {
+  background: var(--dark);
+  color: var(--white);
+}
+.partner h2 {
+  text-align: center;
+}
+.partner ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   body {
     padding: 0rem 5rem;
