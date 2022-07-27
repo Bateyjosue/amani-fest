@@ -41,7 +41,7 @@ header {
   }
 
   nav {
-    visibility: hidden;
+    display: none;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -50,7 +50,7 @@ header {
     right: 0;
     left: 0;
     background: var(--white);
-    z-index: 2009;
+    z-index: 1000;
 
     .navbar-nav {
       display: none;
@@ -59,8 +59,8 @@ header {
     ul {
       display: flex;
       flex-direction: column;
-      gap: 1.2rem;
-      padding: 2rem 2rem 0rem;
+      gap: 1.5rem;
+      padding: 2rem 5rem 0rem;
 
       li:nth-child(1) {
         align-self: flex-end;
@@ -70,6 +70,8 @@ header {
         border: 2px var(--primary) solid;
         background: var(--white);
         width: 70%;
+        padding: 0.5rem 0.5rem;
+        text-align: center;
         a {
           color: var(--primary);
         }
@@ -102,6 +104,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -0.4rem;
+  position: static;
   article {
     h1 {
       padding: 1rem 0rem 0rem;
@@ -118,9 +121,6 @@ header {
       line-height: 1rem;
       font-weight: 500;
       font-size: 1rem;
-      text-align: right;
-      position: absolute;
-      z-index: 2;
     }
   
     p {
@@ -132,19 +132,18 @@ header {
       line-height: 1rem;
       font-weight: 500;
       font-size: 0.8rem;
-      opacity: 0.9;
-      z-index: 3;
       margin: 1rem 0rem;
+      z-index: 0;
+
     }
   
     h3 {
       color: var(--dark);
       font-size: 1.6rem;
-      font-family: "Roboto", sans-serif;
+      font-family: "lato", sans-serif;
       font-weight: 700;
-      opacity: 0.8;
       padding: 1rem 0rem;
-  
+      z-index: 0;
       small {
         font-weight: 400;
         line-height: 1rem;
@@ -257,6 +256,10 @@ header {
   }
 
   ul {
+    .hide-card {
+      display: none;
+    }
+
     li {
       display: flex;
       gap: 0.5rem;
@@ -277,7 +280,6 @@ header {
         padding: 0rem 0rem 0.5rem;
         font-weight: 600;
         font-size: 1rem;
-        opacity: 0.8;
       }
 
       h6 {
@@ -304,7 +306,7 @@ header {
         letter-spacing: 0.04rem;
         font-size: 0.7rem;
         margin-top: 0.4rem;
-        opacity: 0.8;
+        // opacity: 0.8;
       }
     }
   }
@@ -367,7 +369,6 @@ footer {
 
   .foot-text {
     flex: 1;
-    opacity: 0.8;
   }
 }
 
@@ -495,19 +496,19 @@ footer {
         position: absolute;
         top: 0;
         opacity: 0.4;
-        z-index: 10;
+        z-index: 0;
 
       }
 
       h3 {
         font-size: 1.1rem;
         margin-bottom: 0.5rem;
-        z-index: 10;
+        z-index: 0;
       }
 
       p {
         font-size: 0.8rem;
-        z-index: 10;
+        z-index: 0;
       }
     }
   }
@@ -566,7 +567,8 @@ footer {
     nav {
       grid-column:2/3 ;
       grid-row:2/3 ;
-      visibility: visible;
+      // visibility: visible;
+      display: block;
       width: 100%;
       height: 100%;
       position: static;
@@ -646,43 +648,13 @@ footer {
         font-weight: 900;
         font-size: 3rem;
       }
-    
-      h6 {
-        color: var(--primary);
-        line-height: 1rem;
-        font-weight: 500;
-        font-size: 1rem;
-        text-align: right;
-        position: absolute;
-        z-index: 2;
-      }
-    
-      p {
-        background: var(--gray);
-        color: var(--dark);
-        border: var(--white) solid 3px;
-        padding: 1rem;
-        text-align: justify;
-        line-height: 1rem;
-        font-weight: 500;
-        font-size: 0.8rem;
-        opacity: 0.9;
-        width: 76%;
 
+      p {
+        width: 76%;
       }
     
       h3 {
-        color: var(--dark);
-        font-size: 1.8rem;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        opacity: 0.8;
         width: 70%;
-    
-        small {
-          font-weight: 400;
-          font-size: 1rem;
-        }
       }
     }
   }
