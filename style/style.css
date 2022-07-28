@@ -46,7 +46,6 @@ header nav {
   right: 0;
   left: 0;
   background: var(--white);
-  z-index: 1000;
 }
 header nav .navbar-nav {
   display: none;
@@ -54,8 +53,8 @@ header nav .navbar-nav {
 header nav ul {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem 5rem 0rem;
+  gap: 2rem;
+  padding: 2rem 2rem 0rem 5rem;
 }
 header nav ul li:nth-child(1) {
   align-self: flex-end;
@@ -77,6 +76,7 @@ header nav ul a {
 }
 header nav ul a:hover:focus {
   background: var(--primary);
+  color: var(--white);
 }
 header .menu-humberger {
   font-size: 2rem;
@@ -100,7 +100,7 @@ header .menu-humberger {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.04rem;
   line-height: 2rem;
   font-weight: 900;
 }
@@ -341,10 +341,11 @@ footer .foot-text {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.04rem;
   line-height: 2rem;
   font-weight: 900;
   margin-top: 2rem;
+  text-align: center;
 }
 .headline-a h6 {
   color: var(--primary);
@@ -385,7 +386,7 @@ footer .foot-text {
 
 .edition {
   background: var(--white);
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .edition h2 {
   text-align: center;
@@ -404,48 +405,43 @@ footer .foot-text {
   font-weight: 400;
   padding: 1rem;
 }
-.edition ul {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
+.edition .past {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
-  padding: 1rem;
+  justify-content: center;
 }
-.edition ul .first {
-  background-image: url(../images/bg-6.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.edition ul .second {
-  background-image: url(../images/bg-3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.edition ul li {
-  color: var(--white);
-  text-align: center;
-  padding: 4rem 0rem;
+.edition .past .first {
   position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
 }
-.edition ul li .color-overlay {
+.edition .past .first img {
   width: 100%;
   height: 100%;
-  background: #f00;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.edition .past .first .color-overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  background: rgba(255, 0, 0, 0.2274509804);
   position: absolute;
   top: 0;
-  opacity: 0.4;
-  z-index: 0;
+  left: 0;
+  color: white;
+  text-align: center;
 }
-.edition ul li h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  z-index: 0;
+.edition .past .first .color-overlay h3 {
+  font-size: 2rem;
 }
-.edition ul li p {
+.edition .past .first .color-overlay p {
   font-size: 0.8rem;
-  z-index: 0;
+  background: rgba(0, 0, 0, 0.432);
+  border-radius: 0.4rem;
+  padding: 0.4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -510,7 +506,7 @@ footer .foot-text {
     padding: 1.6rem 0rem 0rem 0rem;
     width: 100%;
   }
-  header nav ul li:nth-child(7) {
+  header nav ul li:nth-child(8) {
     align-self: flex-end;
     padding: 0rem 0.5rem;
   }
@@ -538,6 +534,7 @@ footer .foot-text {
     grid-row: 3/4;
   }
   .headline {
+    background-image: url(../images/bkgrnd.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -549,14 +546,17 @@ footer .foot-text {
     gap: 1em;
     padding: 5rem 1rem 6rem;
   }
+  .headline article h6 {
+    font-size: 1.5rem;
+  }
   .headline article h1 {
-    padding: 1rem 0rem 0rem;
+    padding: 0rem 0rem 0rem;
     background: linear-gradient(210deg, var(--primary), rgb(244, 111, 23));
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 0.05rem;
-    line-height: 4rem;
+    line-height: 3rem;
     font-weight: 900;
     font-size: 3rem;
   }
@@ -564,7 +564,7 @@ footer .foot-text {
     width: 76%;
   }
   .headline article h3 {
-    width: 70%;
+    width: 65%;
   }
   .program {
     background-image: url(../images/bg-x1.jpg);
@@ -721,13 +721,20 @@ footer .foot-text {
     display: flex;
     gap: 0.2rem;
   }
+  .main-footer {
+    background: var(--white);
+    color: var(--dark);
+  }
+  nav .home-link {
+    display: none;
+  }
   .headline-a {
     display: flex;
     flex-direction: column;
     gap: 1em;
     padding: 0rem 13%;
     background-image: url(../images/about-dektop.png);
-    background-size: 90% 25vh;
+    background-size: contain;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-position: 2rem 3rem;
@@ -773,7 +780,7 @@ footer .foot-text {
     letter-spacing-text-decoration: underline;
   }
   .edition {
-    padding: 1rem 13%;
+    padding: 2rem 13%;
   }
   .edition h2 {
     text-align: center;
@@ -792,21 +799,26 @@ footer .foot-text {
     font-weight: 400;
     padding: 1rem;
   }
-  .edition ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+  .edition .past {
+    flex-direction: row;
   }
-  .edition ul li h3 {
+  .edition .past .first {
+    width: 50%;
+  }
+  .edition .past .first img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .edition .past .first .color-overlay h3 {
     font-size: 2rem;
-    margin-bottom: 0.5rem;
-    z-index: 1;
   }
-  footer {
+  .edition .past .first .color-overlay p {
+    font-size: 0.8rem;
+    background: rgba(0, 0, 0, 0.432);
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+  }
+  .footer-about {
     color: var(--white);
     background: var(--dark);
   }
