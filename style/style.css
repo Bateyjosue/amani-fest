@@ -938,18 +938,12 @@ footer .foot-text {
     color: var(--dark);
   }
 
-  nav .home-link {
+  .home-link {
     display: none;
   }
 
   .edition {
     padding: 2rem 13%;
-  }
-
-  .edition h2 {
-    text-align: center;
-    padding: 1rem 0;
-    font-weight: 500;
   }
 
   .edition .past {
