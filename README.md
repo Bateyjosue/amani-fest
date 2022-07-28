@@ -9,6 +9,15 @@
 > Take place in February every year in Goma Town/DRCongo. 
 > With this platform you will get all information about the Festival, and even book the ticket for the event.
 
+# Screenshot
+![Mobile Home Page](./images/screenshot/index-page-mobile.png)
+
+![Mobile About Page](./images/screenshot/about-mobile-full.png)
+
+![Desktop Home Page](./images/screenshot/desktop-full.png)
+
+![Desktop About Page](./images/screenshot/about-dektop.png)
+
 ## Built With
 
 - HTML
@@ -41,7 +50,9 @@ the project was debug and format using linters html & css [more about linters](h
 3. ```npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x```, then add configuration file with ``` [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.eslintrc.json```, After you can check for eslint issues with  ```npx eslint .```
 
 ### Live Demo
-[joshbatey:live demo](https://bateyjosue.github.io/bateyjosue.me/)
+[amani Festival:live demo](https://bateyjosue.github.io/amani-fest/)
+
+[Video demo](https://www.loom.com/share/223e4ec4006549b3a5341fa48c999096)
 
 ## Authors
 
