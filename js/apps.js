@@ -107,3 +107,13 @@ showMore.addEventListener('click', () => {
     });
   }
 });
+
+const navLink = document.querySelectorAll('nav .menu li');
+navLink.forEach((element) => {
+  element.addEventListener('click', () => {
+    navLink.forEach((el) => {
+      el.classList.remove('active');
+    });
+    element.classList.add('active');
+  });
+});
