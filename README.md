@@ -26,11 +26,11 @@
 - js DOM API
 
 ## Getting Started
-![](https://img.shields.io/github/issues/Bateyjosue/bateyjosue.me)
-![](https://img.shields.io/github/forks/Bateyjosue/bateyjosue.me)
-![](https://img.shields.io/github/stars/Bateyjosue/bateyjosue.me)
-![](https://img.shields.io/github/license/Bateyjosue/bateyjosue.me)
-![]([https://img.shields.io/github/issues/Bateyjosue/bateyjosue.me](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FBateyjosue%2Fbateyjosue.me))
+![](https://img.shields.io/github/issues/Bateyjosue/amani-fest)
+![](https://img.shields.io/github/forks/Bateyjosue/amani-fest)
+![](https://img.shields.io/github/stars/Bateyjosue/amani-fest)
+![](https://img.shields.io/github/license/Bateyjosue/amani-fest)
+![]([https://img.shields.io/github/issues/Bateyjosue/amani-fest](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FBateyjosue%2Fbateyjosue.me))
 
 ### Prerequisites
 
