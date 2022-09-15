@@ -61,7 +61,7 @@ the project was debug and format using linters html & css [more about linters](h
 
 > Note: Check out the **live demo | Video Demo** to see how the project works...
 ### Live Demo
- > [Live demo](https://bateyjosue.github.io/amani-fest/) && [Video demo](https://www.loom.com/share/223e4ec4006549b3a5341fa48c999096)
+ > [Live demo](https://amani-fest-jb.netlify.app/) && [Video demo](https://www.loom.com/share/223e4ec4006549b3a5341fa48c999096)
 
 ## Authors
 
