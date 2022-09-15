@@ -10,7 +10,7 @@
 > With this platform you will get all information about the Festival, and even book the ticket for the event.
 
 # Screenshot
-
+![](./images/mock.png)
 
 ## Built With
 
