@@ -10,13 +10,7 @@
 > With this platform you will get all information about the Festival, and even book the ticket for the event.
 
 # Screenshot
-![Mobile Home Page](./images/screenshot/index-page-mobile.png)
 
-![Mobile About Page](./images/screenshot/about-mobile-full.png)
-
-![Desktop Home Page](./images/screenshot/desktop-full.png)
-
-![Desktop About Page](./images/screenshot/about-dektop.png)
 
 ## Built With
 
@@ -32,13 +26,29 @@
 ![](https://img.shields.io/github/license/Bateyjosue/amani-fest)
 ![]([https://img.shields.io/github/issues/Bateyjosue/amani-fest](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FBateyjosue%2Fbateyjosue.me))
 
-### Prerequisites
+## Prerequisites
 
 ### Setup
+[-] Clone the repository:
 
-<code> git clone https://github.com/Bateyjosue/amani-fest/</code>, and the dive into the repository folder ```cd <repo name>```
-From there you can open the index.html file in your prefered browser to se the result...
+    $ git clone https://github.com/Bateyjosue/amani-fest.git`
 
+[-] Navigate into the project folfer
+
+    $ cd amani-fest
+
+>Note: The Dependencies to be install will be used for linters configuration
+
+[-] Install dependencies of the project using `npm` package manager
+
+    $ npm i || npm install
+
+[-] Run the project 
+
+After the server is runned open your brower and browse to the following address: 
+
+    localhost:5000
+> Note: this address is available if you run your project using the **live server** extension in ```vs code```. Please Install **Live Server** to enjoy this feature
 ### Usage
 
 the project was debug and format using linters html & css [more about linters](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/clean-code/linters.md)
@@ -49,10 +59,9 @@ the project was debug and format using linters html & css [more about linters](h
 
 3. ```npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x```, then add configuration file with ``` [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.eslintrc.json```, After you can check for eslint issues with  ```npx eslint .```
 
+> Note: Check out the **live demo | Video Demo** to see how the project works...
 ### Live Demo
-[amani Festival:live demo](https://bateyjosue.github.io/amani-fest/)
-
-[Video demo](https://www.loom.com/share/223e4ec4006549b3a5341fa48c999096)
+ > [Live demo](https://bateyjosue.github.io/amani-fest/) && [Video demo](https://www.loom.com/share/223e4ec4006549b3a5341fa48c999096)
 
 ## Authors
 
@@ -62,16 +71,16 @@ the project was debug and format using linters html & css [more about linters](h
 - Twitter: [bateyjosue](https://twitter.com/JosueBatey)
 - LinkedIn: [bateujosue](https://linkedin.com/in/josue-ishara)
 ## Acknowledgement
-To : Cindy Shinon Behance for her UI design template
+    To : Cindy Shinon Behance for her UI design template
 
-& Amani Festival for working with their Content
+    & Amani Festival for the insparation
     
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+  Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+  Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -79,4 +88,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-[MIT License](/LICENSE)
+[Josh Batey](/LICENSE) Licensed
