@@ -47,19 +47,18 @@
 
 After the server is runned open your brower and browse to the following address: 
 
-    localhost:5000
+    localhost:5500
 > Note: this address is available if you run your project using the **live server** extension in ```vs code```. Please Install **Live Server** to enjoy this feature
 ### Usage
 
 the project was debug and format using linters html & css [more about linters](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/clean-code/linters.md)
 
-1. ```npm install --save-dev hint@7.x``` then add the configure file ```[ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.hintrc```, then run the diagnosis using ```npx hint .```
+1.Add the configure file for webhint ```[ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.hintrc```, then run the diagnosis using ```npx hint .```
 
-2. ```npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x``` then add the configure file ```[ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.stylelintrc.json```, then run the diagnosis using ```npx stylelint "**/*.{css, scss}"``` and the, ```npx stylelint "**/*.{css, scss}" --fix``` to fix detected errors
+2. Add the configure file Stylelint ```[ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.stylelintrc.json```, then run the diagnosis using ```npx stylelint "**/*.{css, scss}"``` and the, ```npx stylelint "**/*.{css, scss}" --fix``` to fix detected errors
 
-3. ```npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x```, then add configuration file with ``` [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.eslintrc.json```, After you can check for eslint issues with  ```npx eslint .```
+3. Add configuration file for eslint ``` [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.eslintrc.json```, After you can check for eslint issues with  ```npx eslint .```
 
-> Note: Check out the **live demo | Video Demo** to see how the project works...
 ### Live Demo
  > [Live demo](https://amani-fest-jb.netlify.app/) && [Video demo](https://www.loom.com/share/223e4ec4006549b3a5341fa48c999096)
 
